@@ -3,14 +3,14 @@ kind: Service
 metadata:
   labels:
     app: s1
-  name: argo1s1
+  name: magnuss1
 spec:
   ports:
   - port: 80
     protocol: TCP
     targetPort: 80
   selector:
-    app: argo1
+    app: magnusweb
   type: NodePort
 status:
   loadBalancer: {}

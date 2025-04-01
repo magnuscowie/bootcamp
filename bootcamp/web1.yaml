@@ -1,19 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
-    app: argo1
-  name: argo1
+    app: magnusweb
+  name: magnusweb
 spec:
-  replicas: 10
+  replicas: 3
   selector:
     matchLabels:
-      app: argo1
+      app: magnusweb
   template:
     metadata:
       labels:
-        app: argo1
+        app: magnusweb
     spec:
       containers:
       - image: httpd
