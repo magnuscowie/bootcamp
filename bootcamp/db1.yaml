@@ -16,15 +16,13 @@ spec:
     spec:
       containers:
         - name: db
-          image: mysql:8.0
+          image: mysql:latest
           ports:
             - containerPort: 3306
           env:
+            - name: MYSQL_DATABASE
+              vaule: "hackanton"
             - name: MYSQL_ROOT_PASSWORD
-              value: "123"
-            - name: MYSQL_USER
-              value: "root"
-            - name: MYSQL_PASSWORD
               value: "123"
           volumeMounts:
             - name: db-storage
