@@ -1,14 +1,14 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: web-ingress
-  namespace: microservices
+  name: magnushack-ingress
+  namespace: magnushackathon
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-    - host: myapp.local
+    - host: myapplocalhack.local
       http:
         paths:
           - path: /
