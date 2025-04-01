@@ -22,7 +22,7 @@ spec:
           env:
             - name: MYSQL_USER
               value: "mysql"
-            - name: MYSQL_PASSWORD
+            - name: MYSQL_ROOT_PASSWORD
               value: "123"
           volumeMounts:
             - name: db-storage
