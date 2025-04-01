@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: web-basic
-  namespace: argocd
+  name: magnushackathon
+  namespace: magnusargocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/magnuscowie/bootcampTask3.git
+    repoURL: https://github.com/magnuscowie/bootcamp.git
     targetRevision: HEAD
     path: dev
   destination:
