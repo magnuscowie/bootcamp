@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     app: s1
-  name: magnuss1
+  name: magnusservice
 spec:
   ports:
   - port: 80
